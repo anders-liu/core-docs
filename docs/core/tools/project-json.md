@@ -20,121 +20,122 @@ ms.assetid: 3aef32bd-ee2a-4e24-80f8-a2b615e0336d
 ## Overview
 
     {
-        "name": String,
-        "version": String,
-        "description": String,
-        "copyright": String,
-        "title": String,
-        "entryPoint": String,
-        "testRunner": String,
-        "authors": String[],
-        "language": String,
-        "embedInteropTypes": Boolean,
-        "preprocess": String or String[],
-        "shared": String or String[],
-        "dependencies": Object,
-        "tools": Object,
-        "scripts": Object,
-        "buildOptions": Object {
-            "define": String[],
-            "nowarn": String[],
-            "additionalArguments": String[],
-            "warningsAsErrors": Boolean,
-            "allowUnsafe": Boolean,
-            "emitEntryPoint": Boolean,
-            "optimize": Boolean,
-            "platform": String,
-            "languageVersion": String,
-            "keyFile": String,
-            "delaySign": Boolean,
-            "publicSign": Boolean,
-            "debugType": String,
-            "xmlDoc": Boolean,
-            "preserveCompilationContext": Boolean,
-            "outputName": String,
-            "compilerName": String,
-            "compile": Object {
-                "include": String or String[],
-                "exclude": String or String[],
-                "includeFiles": String or String[],
-                "excludeFiles": String or String[],
-                "builtIns": Object,
-                "mappings": Object
+        "[name](#name)": String,
+        "[version](#version)": String,
+        "[description](#description)": String,
+        "[copyright](#copyright)": String,
+        "[title](#title)": String,
+        "[entryPoint](#entryPoint)": String,
+        "[testRunner](#testRunner)": String,
+        "[authors](#authors)": String[],
+        "[language](#language)": String,
+        "[embedInteropTypes](#embedInteropTypes)": Boolean,
+        "[preprocess](#preprocess)": String or String[],
+        "[shared](#shared)": String or String[],
+        "[dependencies](#dependencies)": Object,
+        "[tools](#tools)": Object,
+        "[scripts](#scripts)": Object,
+        "[buildOptions](#buildOptions)": Object {
+            "[define](#buildOptions.define)": String[],
+            "[nowarn](#buildOptions.nowarn)": String[],
+            "[additionalArguments](#buildOptions.additionalArguments)": String[],
+            "[warningsAsErrors](#buildOptions.warningsAsErrors)": Boolean,
+            "[allowUnsafe](#buildOptions.allowUnsafe)": Boolean,
+            "[emitEntryPoint](#buildOptions.emitEntryPoint)": Boolean,
+            "[optimize](#buildOptions.optimize)": Boolean,
+            "[platform](#buildOptions.platform)": String,
+            "[languageVersion](#buildOptions.languageVersion)": String,
+            "[keyFile](#buildOptions.keyFile)": String,
+            "[delaySign](#buildOptions.delaySign)": Boolean,
+            "[publicSign](#buildOptions.publicSign)": Boolean,
+            "[debugType](#buildOptions.debugType)": String,
+            "[xmlDoc](#buildOptions.xmlDoc)": Boolean,
+            "[preserveCompilationContext](#buildOptions.preserveCompilationContext)": Boolean,
+            "[outputName](#buildOptions.outputName)": String,
+            "[compilerName](#buildOptions.compilerName)": String,
+            "[compile](#buildOptions.compile)": Object {
+                "[include](#buildOptions.compile.include)": String or String[],
+                "[exclude](#buildOptions.compile.exclude)": String or String[],
+                "[includeFiles](#buildOptions.compile.includeFiles)": String or String[],
+                "[excludeFiles](#buildOptions.compile.excludeFiles)": String or String[],
+                "[builtIns](#buildOptions.compile.builtIns)": Object,
+                "[mappings](#buildOptions.compile.mappings)": Object
             },
-            "embed": Object {
-                "include": String or String[],
-                "exclude": String or String[],
-                "includeFiles": String or String[],
-                "excludeFiles": String or String[],
-                "builtIns": Object,
-                "mappings": Object
+            "[embed](#buildOptions.embed)": Object {
+                "[include](#buildOptions.embed.include)": String or String[],
+                "[exclude](#buildOptions.embed.exclude)": String or String[],
+                "[includeFiles](#buildOptions.embed.includeFiles)": String or String[],
+                "[excludeFiles](#buildOptions.embed.excludeFiles)": String or String[],
+                "[builtIns](#buildOptions.embed.builtIns)": Object,
+                "[mappings](#buildOptions.embed.mappings)": Object
             },
-            "copyToOutput": Object {
-                "include": String or String[],
-                "exclude": String or String[],
-                "includeFiles": String or String[],
-                "excludeFiles": String or String[],
-                "builtIns": Object,
-                "mappings": Object
+            "[copyToOutput](#buildOptions.copyToOutput)": Object {
+                "[include](#buildOptions.copyToOutput.include)": String or String[],
+                "[exclude](#buildOptions.copyToOutput.exclude)": String or String[],
+                "[includeFiles](#buildOptions.copyToOutput.includeFiles)": String or String[],
+                "[excludeFiles](#buildOptions.copyToOutput.excludeFiles)": String or String[],
+                "[builtIns](#buildOptions.copyToOutput.builtIns)": Object,
+                "[mappings](#buildOptions.copyToOutput.mappings)": Object
             }
         },
-        "publishOptions": Object {
-            "include": String or String[],
-            "exclude": String or String[],
-            "includeFiles": String or String[],
-            "excludeFiles": String or String[],
-            "builtIns": Object,
-            "mappings": Object
+        "[publishOptions](#publishOptions)": Object {
+            "[include](#publishOptions.include)": String or String[],
+            "[exclude](#publishOptions.exclude)": String or String[],
+            "[includeFiles](#publishOptions.includeFiles)": String or String[],
+            "[excludeFiles](#publishOptions.excludeFiles)": String or String[],
+            "[builtIns](#publishOptions.builtIns)": Object,
+            "[mappings](#publishOptions.mappings)": Object
         },
-        "runtimeOptions": Object {
-            "configProperties": Object {
-                "System.GC.Server": Boolean,
-                "System.GC.Concurrent": Boolean,
-                "System.GC.RetainVM": Boolean,
-                "System.Threading.ThreadPool.MinThreads": Integer,
-                "System.Threading.ThreadPool.MaxThreads": Integer
+        "[runtimeOptions](#runtimeOptions)": Object {
+            "[configProperties](#runtimeOptions.configProperties)": Object {
+                "[System.GC.Server](#runtimeOptions.configProperties.System.GC.Server)": Boolean,
+                "[System.GC.Concurrent](#runtimeOptions.configProperties.System.GC.Concurrent)": Boolean,
+                "[System.GC.RetainVM](#runtimeOptions.configProperties.System.GC.RetainVM)": Boolean,
+                "[System.Threading.ThreadPool.MinThreads](#runtimeOptions.configProperties.System.Threading.ThreadPool.MinThreads)": Integer,
+                "[System.Threading.ThreadPool.MaxThreads](#runtimeOptions.configProperties.System.Threading.ThreadPool.MaxThreads)": Integer
             },
-            "framework": Object {
-                "name": String,
-                "version": String,
+            "[framework](#runtimeOptions.framework)": Object {
+                "[name](#runtimeOptions.framework.name)": String,
+                "[version](#runtimeOptions.framework.version)": String,
             },
-            "applyPatches": Boolean
+            "[applyPatches](#runtimeOptions.applyPatches)": Boolean
         },
-        "packOptions": Object {
-            "summary": String,
-            "tags": String[],
-            "owners": String[],
-            "releaseNotes": String,
-            "iconUrl": String,
-            "projectUrl": String,
-            "licenseUrl": String,
-            "requireLicenseAcceptance": Boolean,
-            "repository": Object {
-                "type": String,
-                "url": String
+        "[packOptions](#packOptions)": Object {
+            "[summary](#packOptions.summary)": String,
+            "[tags](#packOptions.tags)": String[],
+            "[owners](#packOptions.owners)": String[],
+            "[releaseNotes](#packOptions.releaseNotes)": String,
+            "[iconUrl](#packOptions.iconUrl)": String,
+            "[projectUrl](#packOptions.projectUrl)": String,
+            "[licenseUrl](#packOptions.licenseUrl)": String,
+            "[requireLicenseAcceptance](#packOptions.requireLicenseAcceptance)": Boolean,
+            "[repository](#packOptions.repository)": Object {
+                "[type](#packOptions.repository.type)": String,
+                "[url](#packOptions.repository.url)": String
             },
-            "files": Object {
-                "include": String or String[],
-                "exclude": String or String[],
-                "includeFiles": String or String[],
-                "excludeFiles": String or String[],
-                "builtIns": Object,
-                "mappings": Object
+            "[files](#packOptions.files)": Object {
+                "[include](#packOptions.files.include)": String or String[],
+                "[exclude](#packOptions.files.exclude)": String or String[],
+                "[includeFiles](#packOptions.files.includeFiles)": String or String[],
+                "[excludeFiles](#packOptions.files.excludeFiles)": String or String[],
+                "[builtIns](#packOptions.files.builtIns)": Object,
+                "[mappings](#packOptions.files.mappings)": Object
             }
         },
-        "analyzerOptions": Object {
-            "languageId": String
+        "[analyzerOptions](#analyzerOptions)": Object {
+            "[languageId](#analyzerOptions.languageId)": String
         },
-        "configurations": Object,
-        "frameworks": Object {
-            "dependencies": Object,
-            "frameworkAssemblies": Object,
-            "wrappedProject": String,
-            "bin": Object,
-            "imports": String
+        "[configurations](#configurations)": Object,
+        "[frameworks](#frameworks)": Object {
+            "[dependencies](#frameworks.dependencies)": Object,
+            "[frameworkAssemblies](#frameworks.frameworkAssemblies)": Object,
+            "[wrappedProject](#frameworks.wrappedProject)": String,
+            "[bin](#frameworks.bin)": Object,
+            "[imports](#frameworks.imports)": String
         }
     }
 
+<a name="name"></a>
 ## name
 Type: String
 
@@ -148,6 +149,7 @@ For example:
 }
 ```
 
+<a name="version"></a>
 ## version
 Type: String
 
@@ -161,6 +163,7 @@ For example:
 }
 ```
 
+<a name="description"></a>
 ## description
 Type: String
 
@@ -174,6 +177,7 @@ For example:
 }
 ```
 
+<a name="copyright"></a>
 ## copyright
 Type: String
 
@@ -187,6 +191,7 @@ For example:
 }
 ```
 
+<a name="title"></a>
 ## title
 Type: String
 
@@ -200,6 +205,7 @@ For example:
 }
 ```
 
+<a name="entryPoint"></a>
 ## entryPoint
 Type: String
 
@@ -213,6 +219,7 @@ For example:
 }
 ```
     
+<a name="testRunner"></a>
 ## testRunner
 Type: String
 
@@ -226,6 +233,7 @@ For example:
 }
 ```
 
+<a name="authors"></a>
 ## authors
 Type: String[]
 
@@ -239,6 +247,7 @@ For example:
 }
 ```
 
+<a name="language"></a>
 ## language
 Type: String
 
@@ -252,6 +261,7 @@ For example:
 }
 ```
 
+<a name="embedInteropTypes"></a>
 ## embedInteropTypes
 Type: Boolean
 
@@ -265,6 +275,7 @@ For example:
 }
 ```
 
+<a name="preprocess"></a>
 ## preprocess
 Type: String or String[] with a globbing pattern
 
@@ -278,6 +289,7 @@ For example:
 }
 ```
 
+<a name="shared"></a>
 ## shared
 Type: String or String[] with a globbing pattern
 
@@ -291,6 +303,7 @@ For example:
 }
 ```
 
+<a name="dependencies"></a>
 ## dependencies
 Type: Object
 
@@ -313,6 +326,7 @@ For example:
     }
 ```
 
+<a name="tools"></a>
 ## tools
 Type: Object
 
@@ -328,6 +342,7 @@ For example:
 }
 ```
 
+<a name="scripts"></a>
 ## scripts
 Type: Object
 
@@ -349,6 +364,7 @@ For example:
 }
 ```
 
+<a name="buildOptions"></a>
 ## buildOptions
 Type: Object
 
@@ -363,6 +379,7 @@ For example:
     }
 ```
 
+<a name="buildOptions.define"></a>
 ### define
 Type: String[]
 
@@ -378,6 +395,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.nowarn"></a>
 ### nowarn
 Type: String[]
 
@@ -395,6 +413,7 @@ For example:
 
 This ignores the warnings `The variable 'var' is assigned but its value is never used` and `The variable 'var' is assigned but its value is never used`
 
+<a name="buildOptions.additionalArguments"></a>
 ### additionalArguments
 Type: String[]
 
@@ -410,6 +429,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.warningsAsErrors"></a>
 ### warningsAsErrors
 Type: Boolean
 
@@ -425,6 +445,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.allowUnsafe"></a>
 ### allowUnsafe
 Type: Boolean
 
@@ -440,6 +461,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.emitEntryPoint"></a>
 ### emitEntryPoint
 Type: Boolean
 
@@ -455,6 +477,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.optimize"></a>
 ### optimize
 Type: Boolean
 
@@ -470,6 +493,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.platform"></a>
 ### platform
 Type: String
 
@@ -485,6 +509,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.languageVersion"></a>
 ### languageVersion
 Type: String
 
@@ -500,6 +525,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.keyFile"></a>
 ### keyFile
 Type: String
 
@@ -515,6 +541,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.delaySign"></a>
 ### delaySign
 Type: Boolean
 
@@ -530,6 +557,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.publicSign"></a>
 ### publicSign
 Type: Boolean
 
@@ -545,6 +573,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.debugType"></a>
 ### debugType
 Type: String
 
@@ -560,6 +589,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.xmlDoc"></a>
 ### xmlDoc
 Type: Boolean
 
@@ -575,6 +605,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.preserveCompilationContext"></a>
 ### preserveCompilationContext
 Type: Boolean
 
@@ -590,6 +621,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.outputName"></a>
 ### outputName
 Type: String
 
@@ -605,6 +637,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.compilerName"></a>
 ### compilerName
 Type: String
 
@@ -618,11 +651,13 @@ For example:
 }
 ```
     
+<a name="buildOptions.compile"></a>
 ### compile
 Type: Object
 
 An object containing properties for compilation configuration.
 
+<a name="buildOptions.compile.include"></a>
 #### include
 Type: String or String[] with a globbing pattern.
 
@@ -636,6 +671,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.compile.exclude"></a>
 #### exclude
 Type: String or String[] with a globbing pattern.
 
@@ -649,6 +685,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.compile.includeFiles"></a>
 #### includeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -663,6 +700,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.compile.excludeFiles"></a>
 #### excludeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -677,6 +715,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.compile.builtIns"></a>
 #### builtIns
 
 Type: Object
@@ -691,6 +730,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.compile.mappings"></a>
 #### mappings
 Type: Object
 
@@ -720,11 +760,13 @@ Object example:
 }
 ```
 
+<a name="buildOptions.embed"></a>
 ### embed
 Type: Object
 
 An object containing properties for compilation configuration.
 
+<a name="buildOptions.embed.include"></a>
 #### include
 Type: String or String[] with a globbing pattern.
 
@@ -734,6 +776,7 @@ Type: String or String[] with a globbing pattern.
 }
 ```
 
+<a name="buildOptions.embed.exclude"></a>
 #### exclude
 Type: String or String[] with a globbing pattern.
 
@@ -747,6 +790,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.embed.includeFiles"></a>
 #### includeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -757,6 +801,7 @@ Type: String or String[] with a globbing pattern.
 }
 ```
 
+<a name="buildOptions.embed.excludeFiles"></a>
 #### excludeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -767,6 +812,7 @@ Type: String or String[] with a globbing pattern.
 }
 ```
 
+<a name="buildOptions.embed.builtIns"></a>
 #### builtIns
 Type: Object
 
@@ -776,6 +822,7 @@ Type: Object
 }
 ```
 
+<a name="buildOptions.embed.mappings"></a>
 #### mappings
 Type: Object
 
@@ -805,11 +852,13 @@ Object example:
 }
 ```
 
+<a name="buildOptions.copyToOutput"></a>
 ### copyToOutput
 Type: Object
 
 An object containing properties for compilation configuration.
 
+<a name="buildOptions.copyToOutput.include"></a>
 #### include
 Type: String or String[] with a globbing pattern.
 
@@ -819,6 +868,7 @@ Type: String or String[] with a globbing pattern.
 }
 ```
 
+<a name="buildOptions.copyToOutput.exclude"></a>
 #### exclude
 Type: String or String[] with a globbing pattern.
 
@@ -832,6 +882,7 @@ For example:
 }
 ```
 
+<a name="buildOptions.copyToOutput.includeFiles"></a>
 #### includeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -842,6 +893,7 @@ Type: String or String[] with a globbing pattern.
 }
 ```
 
+<a name="buildOptions.copyToOutput.excludeFiles"></a>
 #### excludeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -852,6 +904,7 @@ Type: String or String[] with a globbing pattern.
 }
 ```
 
+<a name="buildOptions.copyToOutput.builtIns"></a>
 #### builtIns
 Type: Object
 
@@ -861,6 +914,7 @@ Type: Object
 }
 ```
 
+<a name="buildOptions.copyToOutput.mappings"></a>
 #### mappings
 Type: Object
 
@@ -890,11 +944,13 @@ Object example:
 }
 ```
 
+<a name="publishOptions"></a>
 ## publishOptions
 Type: Object
 
 An object containing properties for compilation configuration.
 
+<a name="publishOptions.include"></a>
 ### include
 Type: String or String[] with a globbing pattern.
 
@@ -904,6 +960,7 @@ Type: String or String[] with a globbing pattern.
 }
 ```
 
+<a name="publishOptions.exclude"></a>
 ### exclude
 Type: String or String[] with a globbing pattern.
 
@@ -917,6 +974,7 @@ For example:
 }
 ```
 
+<a name="publishOptions.includeFiles"></a>
 ### includeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -927,6 +985,7 @@ Type: String or String[] with a globbing pattern.
 }
 ```
 
+<a name="publishOptions.excludeFiles"></a>
 ### excludeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -937,6 +996,7 @@ Type: String or String[] with a globbing pattern.
 }
 ```
 
+<a name="publishOptions.builtIns"></a>
 ### builtIns
 Type: Object
 
@@ -946,6 +1006,7 @@ Type: Object
 }
 ```
 
+<a name="publishOptions.mappings"></a>
 ### mappings
 Type: Object
 
@@ -979,16 +1040,19 @@ Object example:
 }
 ```
 
+<a name="runtimeOptions"></a>
 ## runtimeOptions
 Type: Object
 
 Specifies parameters to be provided to the runtime during initialization.
 
+<a name="runtimeOptions.configProperties"></a>
 ### configProperties
 Type: Object
 
 Contains configuration properties to configure the runtime and the framework.
 
+<a name="runtimeOptions.configProperties.System.GC.Server"></a>
 #### System.GC.Server
 Type: Boolean
 
@@ -1006,6 +1070,7 @@ For example:
 }
 ```
 
+<a name="runtimeOptions.configProperties.System.GC.Concurrent"></a>
 #### System.GC.Concurrent
 Type: Boolean
 
@@ -1023,6 +1088,7 @@ For example:
 }
 ```
 
+<a name="runtimeOptions.configProperties.System.GC.RetainVM"></a>
 #### System.GC.RetainVM
 Type: Boolean
 
@@ -1040,6 +1106,7 @@ For example:
 }
 ```
 
+<a name="runtimeOptions.configProperties.System.Threading.ThreadPool.MinThreads"></a>
 #### System.Threading.ThreadPool.MinThreads
 Type: Integer
 
@@ -1055,6 +1122,7 @@ Overrides the number of minimum threads for the ThreadPool worker pool.
 }
 ```
 
+<a name="runtimeOptions.configProperties.System.Threading.ThreadPool.MaxThreads"></a>
 #### System.Threading.ThreadPool.MaxThreads
 Type: Integer
 
@@ -1070,11 +1138,13 @@ Overrides the number of maximum threads for the ThreadPool worker pool.
 }
 ```
 
+<a name="runtimeOptions.framework"></a>
 ### framework
 Type: Object
 
 Contains shared framework properties to use when activating the application. The presence of this section indicates that the application is a portable app designed to use a shared redistributable framework.
 
+<a name="runtimeOptions.framework.name"></a>
 #### name
 Type: String
 
@@ -1090,6 +1160,7 @@ Name of the shared framework.
 }
 ```
 
+<a name="runtimeOptions.framework.version"></a>
 #### version
 Type: String
 
@@ -1105,6 +1176,7 @@ Version of the shared framework.
 }
 ```
 
+<a name="runtimeOptions.applyPatches"></a>
 ### applyPatches
 Type: Boolean
 
@@ -1118,11 +1190,13 @@ Type: Boolean
 }
 ```
 
+<a name="packOptions"></a>
 ## packOptions
 Type: Object
 
 Defines options pertaining to the packaging of the project output into a NuGet package.
 
+<a name="packOptions.summary"></a>
 ### summary
 Type: String
 
@@ -1138,6 +1212,7 @@ For example:
 }
 ```
 
+<a name="packOptions.tags"></a>
 ### tags
 Type: String[]
 
@@ -1153,6 +1228,7 @@ For example:
 }
 ```
 
+<a name="packOptions.owners"></a>
 ### owners
 Type: String[]
 
@@ -1168,6 +1244,7 @@ For example:
 }
 ```
 
+<a name="packOptions.releaseNotes"></a>
 ### releaseNotes
 Type: String
 
@@ -1183,6 +1260,7 @@ For example:
 }
 ```
 
+<a name="packOptions.iconUrl"></a>
 ### iconUrl
 Type: String
 
@@ -1198,6 +1276,7 @@ For example:
 }
 ```
 
+<a name="packOptions.projectUrl"></a>
 ### projectUrl
 Type: String
 
@@ -1213,6 +1292,7 @@ For example:
 }
 ```
 
+<a name="packOptions.licenseUrl"></a>
 ### licenseUrl
 Type: String
 
@@ -1228,6 +1308,7 @@ For example:
 }
 ```
 
+<a name="packOptions.requireLicenseAcceptance"></a>
 ### requireLicenseAcceptance
 Type: Boolean
 
@@ -1243,11 +1324,13 @@ For example:
 }
 ```
    
+<a name="packOptions.repository"></a>
 ### repository
 Type: Object
 
 Contains information about the repository where the project is stored.
 
+<a name="packOptions.repository.type"></a>
 #### type
 Type: String
 
@@ -1265,6 +1348,7 @@ For example:
 }
 ```
 
+<a name="packOptions.repository.url"></a>
 #### url
 Type: String
 
@@ -1282,9 +1366,11 @@ For example:
 }
 ```
 
+<a name="packOptions.files"></a>
 ### files
 Type: Object
 
+<a name="packOptions.files.include"></a>
 #### include
 Type: String or String[] with a globbing pattern.
 
@@ -1294,6 +1380,7 @@ Type: String or String[] with a globbing pattern.
 }
 ```
 
+<a name="packOptions.files.exclude"></a>
 #### exclude
 Type: String or String[] with a globbing pattern.
 
@@ -1307,6 +1394,7 @@ For example:
 }
 ```
 
+<a name="packOptions.files.includeFiles"></a>
 #### includeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -1317,6 +1405,7 @@ Type: String or String[] with a globbing pattern.
 }
 ```
 
+<a name="packOptions.files.excludeFiles"></a>
 #### excludeFiles
 
 Type: String or String[] with a globbing pattern.
@@ -1327,6 +1416,7 @@ Type: String or String[] with a globbing pattern.
 }
 ```
 
+<a name="packOptions.files.builtIns"></a>
 #### builtIns
 Type: Object
 
@@ -1336,6 +1426,7 @@ Type: Object
 }
 ```
 
+<a name="packOptions.files.mappings"></a>
 #### mappings
 Type: Object
 
@@ -1365,6 +1456,7 @@ Object example:
 }
 ```
 
+<a name="analyzerOptions"></a>
 ## analyzerOptions
 Type: Object
 
@@ -1378,6 +1470,7 @@ For example:
 }
 ```
 
+<a name="analyzerOptions.languageId"></a>
 ### languageId
 Type: String
 
@@ -1391,6 +1484,7 @@ For example:
 }
 ```
 
+<a name="configurations"></a>
 ## configurations
 Type: Object
 
@@ -1408,6 +1502,7 @@ For example:
 }
 ```
 
+<a name="frameworks"></a>
 ## frameworks
 Type: Object
 
@@ -1425,6 +1520,7 @@ For example:
 }
 ```
 
+<a name="frameworks.dependencies"></a>
 ### dependencies
 Type: Object
 
@@ -1442,6 +1538,7 @@ For example:
 }
 ```
 
+<a name="frameworks.frameworkAssemblies"></a>
 ### frameworkAssemblies
 Type: Object
 
@@ -1462,6 +1559,7 @@ For example:
 }
 ```
 
+<a name="frameworks.wrappedProject"></a>
 ### wrappedProject
 Type: String
 
@@ -1477,6 +1575,7 @@ For example:
 }
 ```
 
+<a name="frameworks.bin"></a>
 ### bin
 Type: Object
 
@@ -1494,6 +1593,7 @@ For example:
 }
 ```
 
+<a name="frameworks.imports"></a>
 ### imports
 Type: String
 
